@@ -36,8 +36,8 @@ class ItemDetailViewController: UIViewController {
     
     @IBAction func save(_ sender: Any) {
         guard let name = nameTextField.text,
-         let value = valueTextField.text,
-         let location = locationTextField.text else {return}
+            let value = valueTextField.text,
+            let location = locationTextField.text else {return}
         
         if let item = item {
             itemController?.update(item:item, withName: name, value: value, location: location)
